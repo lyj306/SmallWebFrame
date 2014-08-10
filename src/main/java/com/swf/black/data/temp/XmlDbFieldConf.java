@@ -1,5 +1,7 @@
 package com.swf.black.data.temp;
 
+import com.swf.black.data.sql.SqlFieldTypeUtil;
+
 
 public class XmlDbFieldConf {
 	private String fieldName;
@@ -60,7 +62,8 @@ public class XmlDbFieldConf {
 	
 	public String toSql() {
 		StringBuilder buff = new StringBuilder();
-		buff.append("`").append(fieldName).append("` ").append(type);
+		buff.append("`").append(fieldName).append("` ")
+			.append(SqlFieldTypeUtil.javaFieldType2SqlFieldType(type, typeLength));
 		
 		if(defValue != null && !defValue.isEmpty()) {
 			buff.append("DEFAULT '").append(defValue).append("'");

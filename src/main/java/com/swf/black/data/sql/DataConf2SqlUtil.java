@@ -7,15 +7,17 @@ import com.swf.black.data.temp.XmlDbconf;
 public class DataConf2SqlUtil {
 
 	
+	public static String sqlFilePath = "D:/";
+	
 	public static void createSqlFile(XmlDataConf xdc) {
 		if(xdc == null || xdc.getDbConf() == null)
 			return;
-		String sql = buildSqlFromDataConf(xdc.getDbConf());
+		buildSqlFromDataConf(xdc.getDbConf());
 	}
 	
 	
 	
-	private static String buildSqlFromDataConf(XmlDbconf dbConf) {
+	private static void buildSqlFromDataConf(XmlDbconf dbConf) {
 		StringBuilder buff = new StringBuilder();
 		buff.append("\nDROP TABLE IF EXISTS `").append(dbConf.getTable()).append("`;")
 			.append("\nCREATE TABLE `").append(dbConf.getTable()).append("` (");
@@ -30,7 +32,8 @@ public class DataConf2SqlUtil {
 		}
 		buff.append(") ENGINE=InnoDB DEFAULT CHARSET=utf8;");
 		
-		return buff.toString();
+		String sql = buff.toString();
+		
 	}
 	
 }
