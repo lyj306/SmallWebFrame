@@ -1,0 +1,60 @@
+.reg_warper{
+width:883px;margin:10px auto 0px auto;
+}
+
+/*regleft*/
+.regleft{width:566px;float:left;}
+.reglefttable{float:left;width:100%;margin-top:10px;color:#555; margin-left:20px}
+.regleft th{font-size:14px;font-weight:normal;padding-bottom:20px;}
+.regleft td{line-height:22px; height:30px;padding-left:15px;color:#555;}
+.regleft td input{border:1px #adadad solid;height:16px;line-height:16px;font-size:12px;}
+.regleft td select{color:#b7b7b7;margin-right:3px;}
+.regleft p{color:#b7b7b7;}
+
+
+/*regright*/
+.regright{width:280px;float:right; margin-right:20px; position:relative}
+.regright .jindu{background:url(../../images/lezipu/reg_jindu.gif) no-repeat;width:300px;height:61px;overflow:hidden;}
+.regright .jindutiao{padding:15px 0px 0px 15px;}
+.regright .jindutiao span{color:#2f6ad5;padding-right:19px}
+.regright .jindutiao img{margin-left:1px;}
+.regright .tishi{
+	background:#FE7201;color:#fff;text-indent:20px;height:27px;line-height:27px;margin-top:12px;overflow:hidden;
+}
+.regright span{line-height:26px;color:#555;}
+.regright span p{padding-left:15px;}
+
+
+/*reg2*/
+.regleft .upload{
+	padding-top:10px;padding-bottom:10px;border-bottom:1px #dbdbdb dashed;height:110px;position:relative;margin-left:-20px;width:570px;padding-left:20px;
+]}
+.regleft .reg_tou{
+	border:1px #adadad solid;width:100px;height:100px;float:left;
+]}
+.regleft .up{
+	line-height:30px;margin-top:10px;color:#b7b7b7;
+}
+.regleft .reg_up input{
+	border:1px #adadad solid;height:20px;line-height:20px;color:#f60;
+}
+
+.regleft .b1{
+	background:url(../../images/lezipu/reg.gif) no-repeat 0px -155px;width:71px;height:36px;border:none;margin-right:20px;padding-top:0;color:#393939;line-height:16px;padding-bottom:12px;*padding-bottom:9px;_padding-bottom:9px;overflow:hidden;cursor:pointer;
+}
+.regleft .b2{
+	background:url(../../images/lezipu/reg.gif) no-repeat 0px -115px;width:71px;height:36px;border:none;margin-right:20px;text-align:center;text-align:top;color:#393939;padding-bottom:12px;*padding-bottom:9px;_padding-bottom:9px;overflow:hidden;cursor:pointer;
+}
+.regleft .b3{
+	background:url(../../images/lezipu/reg.gif) no-repeat 0px -200px;width:60px;height:23px;border:none;text-align:center;color:#393939;line-height:25px;cursor:pointer;
+}
+.regright .tieshi{background:url(../../images/lezipu/reg.gif) no-repeat 15px 0;width:79px;line-height:23px;color:#fff;padding-left:25px;height:30px;margin-top:10px;margin-bottom:5px;}
+.regright .txt{padding:5px 0px 0px 18px;line-height:26px;color:#555;}
+
+
+/*reg3*/
+.regright .htishiby{font-size:12px;color:#2f6ad5;margin-left:125px;margin-top:-10px;*margin-top:-10px;_margin-top:-5px;width:94px;position:relative;z-index:100;}
+.regright .phone{background: url(../images/reg.gif) no-repeat 0px -35px;padding-left:25px;line-height:23px;width:92px;height:30px;margin-top:20px;margin-bottom:5px;color:#fff;}
+.regright span img{margin-left:15px;margin-top:10px;}
+
+

@@ -1,0 +1,96 @@
+.musicbox{ margin:0px auto; width:880px; margin-top:15px;}
+.mus_jsbox{ float:left; width:282px; height:307px; border:1px solid #cdcdcd; display:inline}
+.mus_listbox{ float:left; width:546px; height:300px; background: url(../images/musiclistbg.gif) no-repeat; padding-top:7px; padding-left:28px; margin-left:20px; display:inline}
+.mus_listtop{ float:left; width:546px; height:28px;}
+.mus_listtop li{ float:left; width:96px; height:28px;line-height:28px; text-align:center;background: url(../images/musiclia.gif) no-repeat; font-size:14px}
+a.buton:link {
+	 text-decoration: none; float:left; width:96px; height:28px; line-height:28px; text-align:center;background: url(../images/musiclih.gif) no-repeat; font-size:14px; font-weight:bold
+}
+a.buton:visited {
+	 text-decoration: none; float:left; width:96px; height:28px;line-height:28px; text-align:center;background: url(../images/musiclih.gif) no-repeat; font-size:14px; font-weight:bold
+}
+a.buton:hover {
+	 text-decoration: none; float:left; width:96px; height:28px;line-height:28px; text-align:center;background: url(../images/musiclih.gif) no-repeat; font-size:14px; font-weight:bold
+}
+
+a.buton2:link {
+	 text-decoration: none; float:left; width:96px; height:28px; line-height:28px; text-align:center;background: url(../images/musiclia.gif) no-repeat; font-size:14px
+}
+a.buton2:visited {
+	 text-decoration: none; float:left; width:96px; height:28px;line-height:28px; text-align:center;background: url(../images/musiclia.gif) no-repeat; font-size:14px
+}
+a.buton2:hover {
+	 text-decoration: none; float:left; width:96px; height:28px;line-height:28px; text-align:center;background: url(../images/musiclia.gif) no-repeat; font-size:14px
+}
+.mus_listmate{ float:left; width:540px;height:240px}
+.mus_listmatetable{ float:left; width:528px; }
+.mus_listmatetable td{height:23px; line-height:23px; border-bottom:1px dotted #ccc; text-align:left}
+.mus_listmatetable input{ margin-right:9px}
+.mus_listbom{ float:left; width:528px; text-align:center; height:26px; line-height:39px;}
+.mus_listbom p{ float:left; width:264px;} 
+
+.mus_listmatetwo{ float:left; width:540px; height:240px}
+.mus_listmatetwo li{ float:left; width:172px; height:90px; padding:15px 0px; line-height:180%; color:#b49eab}
+.mus_listmatetwo li a{color:#686868}
+.mus_listmatetwo li img{ float:left; margin-right:4px}
+
+.mustwolist{ float:left; margin:15px 0px; padding:8px 6px; width:866px;  height:142px; border:1px solid #939393; background:url(../images/bgmu.gif) repeat-x}
+.mustwolistone{ float:left; width:866px; height:26px; line-height:26px; border-bottom:1px solid #f1f1f1}
+.mustwolistone li.one{ float:left; width:435px; font-size:14px;}
+.mustwolistone li.one img{ margin-right:6px}
+.mustwolistone li.two{ float:left; width:300px;}
+.mustwolistone li.two img{ float:left; }
+.mustwolistone li.two span{ float:left; padding-left:8px; padding-right:5px; padding-top:1px; background:url(../images/middlehappy.gif) repeat-x;}
+.mustwolistone li.three{ float:right; width:100px; text-align:right}
+
+.mustwolisttwo{ float:left; width:866px; padding-top:4px}
+.mustwolisttwo li{ float:left; width:215px; height:22px; line-height:22px; background:url(../images/dianmu.png) 2px 4px no-repeat; text-indent:12px; overflow:hidden}
+
+.musmiddleboxleft{ float:left; width:630px; height:436px; background:url(../images/bgmiddle.gif) repeat-x; border:1px solid #cdcdcd; padding:0px 6px; margin-right:15px}
+.musmiddletop{ float:left; width:630px; }
+.musmiddletop span{ float:left; width:530px; font-size:14px;height:26px; padding-top:8px}
+.musmiddletop code{ float:left; width:87px; text-align:right; padding-right:13px; font-size:12px; height:34px; line-height:34px;}
+
+.musmiddlebox{ float:left; width:628px; height:367px; border:1px solid #cdcdcd; background:#FFFFFF}
+.musmiddleboxtable{ float:left; width:618px; padding:2px 5px 0px}
+.musmiddleboxtable td{height:21px; line-height:21px; border-bottom:1px dotted #ccc; text-align:left}
+.musmiddleboxtable input{ margin-right:6px; vertical-align:baseline; }
+.musmiddleboxtable img{vertical-align: baseline;}
+
+.musmiddlebb{float:left; width:628px; height:30px; padding-top:5px;}
+.musmiddlebb span{float:left; width:120px; }
+.musmiddlebb input{ margin-left:8px;_margin-left:3px;*margin-left:3px; margin-right:6px}
+a.m_one:link {
+	 text-decoration: none; float:left; width:69px; height:23px; line-height:23px; text-align:center;background: url(../images/m_img1.gif) no-repeat; font-size:12px; color:#FFFFFF
+}
+a.m_one:visited {
+	 text-decoration: none; float:left; width:69px; height:23px;line-height:23px; text-align:center;background: url(../images/m_img1.gif) no-repeat; font-size:12px; color:#FFFFFF
+}
+a.m_one:hover {
+	 text-decoration: none; float:left; width:69px; height:23px;line-height:23px; text-align:center;background: url(../images/m_img1.gif) no-repeat; font-size:12px; color:#FFFFFF
+}
+a.m_two:link {
+	 text-decoration: none; float:left; width:69px; height:23px; line-height:23px; text-align:center;background: url(../images/m_img2.gif) no-repeat; font-size:12px; color:#000; margin-left:6px; margin-right:253px
+}
+a.m_two:visited {
+	 text-decoration: none; float:left; width:69px; height:23px;line-height:23px; text-align:center;background: url(../images/m_img2.gif) no-repeat; font-size:12px; color:#000; margin-left:6px; margin-right:253px
+}
+a.m_two:hover {
+	 text-decoration: none; float:left; width:69px; height:23px;line-height:23px; text-align:center;background: url(../images/m_img2.gif) no-repeat; font-size:12px; color:#000; margin-left:6px; margin-right:253px
+}
+a.m_three:link {
+	 text-decoration: none; float:left; width:94px; height:24px; line-height:24px; text-align:center;background: url(../images/m_img3.gif) no-repeat; font-size:12px; color:#000; 
+}
+a.m_three:visited {
+	 text-decoration: none; float:left; width:94px; height:24px;line-height:24px; text-align:center;background: url(../images/m_img3.gif) no-repeat; font-size:12px; color:#000;
+}
+a.m_three:hover {
+	 text-decoration: none; float:left; width:94px; height:24px;line-height:24px; text-align:center;background: url(../images/m_img3.gif) no-repeat; font-size:12px; color:#000; 
+}
+
+.musmiddleboxright{ float:left; width:206px; height:436px; background:url(../images/bgmiddle.gif) repeat-x; border:1px solid #cdcdcd; padding:0px 6px; }
+.musmiddleboxrighttop{ float:left; width:194px; height:28px; padding-top:5px; font-size:14px}
+.musmiddleboxrighttop img{ margin-right:6px}
+.musmiddlebox_right{ float:left; width:188px; height:390px; border:1px solid #cdcdcd; background:#FFFFFF; padding:2px 8px}
+.musmiddlebox_right td{ height:22px;_height:21px;*height:21px;  border-bottom:1px dotted #ccc;} 
+.musmiddlebox_right td img{ margin-right:10px}

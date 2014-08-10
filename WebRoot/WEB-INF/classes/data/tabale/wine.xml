@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<dbconf>
+		<table>wine</table>
+		<key>id</key>
+		<fields>
+			<id type="int" len="11" comments="ID"/>
+			<name type="String" len="100" comments="酒名字" />
+			<content type="String" len="2000" comments="描述" />
+			<price type="float" len="0" default="1000" comments="价格"  />
+			<dis_price type="float" len="0" default="1000" comments="折扣价" />
+			<birthday type="int" len="11" default="0" comments="出厂日期"  />
+			<feel type="byte" len="3" default="1" scope="1,2,3,4" scopeSelect="1-甘甜,2-浓重,3-酸甜,4-顺滑" comments="口感" />
+			<flavor type="byte" len="3" default="1" scope="1,2,3,4" scopeSelect="1-酱香,2-浓香,3-清香,4-米香" comments="香型" />
+			<degree type="byte" len="3" default="50" comments="度数"  />
+			<uses type="byte" len="3" default="1" scope="1,2,3,4" scopeSelect="1-送礼,2-聚会,3-婚宴,4-商务" comments="用途"  />
+			<meat type="byte" len="3" default="1" scope="1,2,3,4" scopeSelect="1-湘菜,2-川菜,3-粤菜,4-鲁菜" comments="配餐" />
+		</fields>
+	</dbconf>
+	
+	
+</root>

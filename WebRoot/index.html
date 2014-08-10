@@ -1,0 +1,579 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>环球国际语言社区universalmusic-语言学习社区,国际交友,学英文,学英语,学中文,学法语,学西班牙语,学葡萄牙语,学德语,学日语,学韩语,学阿拉伯语,学意大利语,学俄语,国际标准舞音乐,华尔兹,探戈舞,快步舞,弧步舞,维也纳华尔兹,伦巴舞,恰恰舞,牛仔舞,桑巴舞,斗牛舞</title>
+<link href="css/main.css" rel="stylesheet" type="text/css" />  
+<link href="css/index.css" rel="stylesheet" type="text/css" />  
+<link href="css/indexjs.css" rel="stylesheet" type="text/css" />      
+<meta name="Description"  content="环球音乐库，提供免费音乐流、歌词、榜单、明星；语言学习,语言交换,语言学习社区,语言学习网络,外语学习,语言伙伴,语言交友,国际交友,老外,学英文,学英语,学中文,对外汉语,学法语,学西班牙语,学葡萄牙语,学德语,学日语,学韩语,学阿拉伯语,学意大利语,学俄语,国际标准舞音乐,华尔兹,探戈舞,快步舞,弧步舞,维也纳华尔兹,伦巴舞,恰恰舞,牛仔舞,桑巴舞,斗牛舞" />
+<meta name="keywords" content="mp3,音乐,世界音乐,歌曲,音乐网,音乐下载,流行音乐,榜单,语言学习,语言交换,语言学习社区,外语学习,语言伙伴,语言交友,国际交友,学英文,学英语,学中文,学法语,学西班牙语,学葡萄牙语,学德语,学日语,学韩语,学阿拉伯语,学意大利语,学俄语,国际标准舞音乐,华尔兹,探戈舞,快步舞,弧步舞,维也纳华尔兹,伦巴舞,恰恰舞,牛仔舞,桑巴舞,斗牛舞" />
+<meta name="author" content="xiaoyan" />
+<meta name="contact mail" content="xiaoyan811102@yahoo.com.cn" />
+<script src="js/index.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+<script src="js/common.js" type=text/javascript></script>
+<script src="js/menu.js" type=text/javascript></script>
+<script type="text/javascript"> 
+$(document).ready(function() {
+
+	//Show Banner
+	$(".main_image .desc").show(); //Show Banner
+	$(".main_image .block").animate({ opacity: 0.85 }, 1 ); //Set Opacity
+
+	//Click and Hover events for thumbnail list
+	$(".image_thumb ul li:first").addClass('active'); 
+	$(".image_thumb ul li").mouseover(function(){ 
+		//Set Variables
+		var imgAlt = $(this).find('img').attr("alt"); //Get Alt Tag of Image
+		var imgTitle = $(this).find('a').attr("href"); //Get Main Image URL
+		var imgDesc = $(this).find('.block').html(); 	//Get HTML of block
+		var imgDescHeight = $(".main_image").find('.block').height();	//Calculate height of block	
+		
+		if ($(this).is(".active")) {  //If it's already active, then...
+			return false; // Don't click through
+		} else {
+			//Animate the Teaser				
+			$(".main_image .block").animate({ opacity: 0, marginBottom: -imgDescHeight }, 250 , function() {
+				$(".main_image .block").html(imgDesc).animate({ opacity: 0.85,	marginBottom: "0" }, 250 );
+				$(".main_image img").attr({ src: imgTitle , alt: imgAlt});
+			});
+		}
+		
+		$(".image_thumb ul li").removeClass('active'); //Remove class of 'active' on all lists
+		$(this).addClass('active');  //add class of 'active' on this list only
+		return false;
+		
+	}) .hover(function(){
+		$(this).addClass('hover');
+		}, function() {
+		$(this).removeClass('hover');
+	});
+			
+	//Toggle Teaser
+	$("a.collapse").mouseover(function(){
+		$(".main_image .block").slideToggle();
+		$("a.collapse").toggleClass("show");
+	});
+	
+});//Close Function
+</script>
+</head>
+<body>
+
+<!--header start-->
+<div class="newhead">
+     <div class="newheadbox">
+	       <ul>
+		       <li class="one"><a href="#" title="环球国际语言社区"><img src="images/newlogo.gif" align="absmiddle" alt="环球国际语言社区" /></a></li>
+			   <li class="two">
+				   <a href="#" title="首页" class="newheada">首页</a>
+				   <a href="#" title="音乐" class="newheada">音乐</a>
+				   <a href="#" title="交友" class="newheada">交友</a>
+				   <a href="#" title="问答" class="newheada">问答</a>
+				   <a href="#" title="分享" class="newheada">分享</a>
+				   <a href="#" title="交换" class="newheada">交换</a>
+				   <a href="#" title="活动" class="newheada">活动</a>
+				   <a href="#" title="社区" class="newheada">社区</a>
+			   </li>
+			   <li class="three">
+			       <a href="#" title="登陆" class="newdenga">登陆</a>
+				   <a href="#" title="注册" class="newwitea">注册</a>	   
+			   </li>
+			   <li class="four"><input type="text" class="inputnewleft" /><input type="submit" value="" class="inputnewright" /></li>
+			   <li class="five">
+			       <a href="#" title="帮助" class="newbba">帮助</a>
+				   <a href="#" title="" class="newbba">│</a>
+				   <a class="newbba" id="user1" onmouseover="showMenu(this.id);" href="#"><img src="images/chinaimg.gif" align="texttop" alt="" />简体中文</a>
+						<div class="popupmenu_popup" id="user1_menu" style="display:none">
+								<dl>
+										<dt><a href="#" title="" class="baibai"><img src="images/chinaimg.gif" align="texttop" alt="" />简体中文</a></dt>
+										<dt><a href="#" title="" class="baibai"><img src="images/chinaimg.gif" align="texttop" alt="" />简体中文</a></dt>																						                                        <dt><a href="#" title="" class="baibai"><img src="images/chinaimg.gif" align="texttop" alt="" />简体中文</a></dt>
+										<dt><a href="#" title="" class="baibai"><img src="images/chinaimg.gif" align="texttop" alt="" />简体中文</a></dt>
+										<dt><a href="#" title="" class="baibai"><img src="images/chinaimg.gif" align="texttop" alt="" />简体中文</a></dt>																						                                        <dt><a href="#" title="" class="baibai"><img src="images/chinaimg.gif" align="texttop" alt="" />简体中文</a></dt>   										   
+								</dl>  
+						</div>
+			   </li>
+	       </ul>
+	 </div>
+</div>
+<!--header end-->
+
+<!--document start-->
+
+<div style="margin:0px auto;width:896px">
+
+<!--left_start-->
+<div class="left">
+<div class="yindao">
+<h1>学习一门外语</h1>
+<p>在环球国际语言社区，您可以找到帮助您学习一门外语的人和资源</p>
+<ul>
+<li>寻找<a href="partners.html" title="Language Partners" >语言交换伙伴</a></li>
+<li>聆听<a href="artistbrowse.html" title="Artist Browse" >世界各国音乐</a>资源</li>
+<li><a href="ballroomdancing.html" title="Ballroom Dancing" >国际标准舞</a>作品分享</li> 
+<li>向母语的会员<a href="answers.html" title="Answers" >提问</a>, 参与<a href="groups.html" title="Groups" >小组讨论</a></li>
+<li>发现和分享免费的<a href="resources.html" title="Resources" >学习资源</a></li>
+</ul>
+</div>
+
+		  <div id="main" class="container">
+	<div class="main_image">
+		<img src="images/banner1.jpg" alt="- banner1" />
+		<div class="desc">
+			<div class="block">
+				<h2><strong>Slowing Down专辑标题1</strong></h2>		
+				<p>《Pagan Dawn》是一张 Medwyn与家人1</p>
+			</div>
+		</div>
+	</div>
+	<div class="image_thumb">
+		<ul>
+			<li class="first">
+				<a href="images/banner3.jpg"><img src="images/banner1_thumb.jpg" alt="Slowing Dow" /></a>
+				<div class="block">
+					<h2>Slowing Down专辑标题2</h2>
+					<span>《Pagan Dawn》是一张 Medwyn与家人2  </span>	
+				</div>
+				<div style="float:left; width:180px; margin-left:10px; margin-top:5px"><a href="#" title="专辑详情" class="greened">专辑详情 &gt;&gt;</a><a href="#" title="艺术家详情" class="greened">艺术家详情 &gt;&gt;</a></div>
+			</li>
+			<li>
+				<a href="images/banner2.jpg"><img src="images/banner2_thumb.jpg" alt="Organized Food Fight" /></a>
+				<div class="block">
+					<h2>Slowing Down专辑标题3</h2>
+					<span>《Pagan Dawn》是一张 Medwyn与家人3  </span>	
+				</div>
+				<div style="float:left; width:180px; margin-left:10px; margin-top:5px"><a href="#" title="专辑详情" class="greened">专辑详情 &gt;&gt;</a><a href="#" title="艺术家详情" class="greened">艺术家详情 &gt;&gt;</a></div>				
+			</li>
+			<li>
+				<a href="images/banner3.jpg"><img src="images/banner3_thumb.jpg" alt="Endangered Species" /></a>
+				<div class="block">
+					<h2>Slowing Down专辑标题4</h2>
+					<span>《Pagan Dawn》是一张 Medwyn与家人4 </span>	
+				</div>
+				<div style="float:left; width:180px; margin-left:10px; margin-top:5px"><a href="#" title="专辑详情" class="greened">专辑详情 &gt;&gt;</a><a href="#" title="艺术家详情" class="greened">艺术家详情 &gt;&gt;</a></div>				
+			</li>
+			<li style="height:62px">
+				<a href="images/banner1.jpg"><img src="images/banner1_thumb.jpg" alt="Slowing Dow" /></a>
+				<div class="block">
+					<h2>Slowing Down专辑标题5</h2>
+					<span>《Pagan Dawn》是一张 Medwyn与家人5  </span>	
+				</div>
+				<div style="float:left; width:180px; margin-left:10px; margin-top:5px"><a href="#" title="专辑详情" class="greened">专辑详情 &gt;&gt;</a><a href="#" title="艺术家详情" class="greened">艺术家详情 &gt;&gt;</a></div>				
+			</li>			
+		</ul>
+	</div>
+</div>
+
+    <!-- <div class="bodylefttitleone">大家正在听</div>
+     
+       <ul class="leftultwo">
+       
+         <li>
+				   <a href="#" title=""><img src="images/tu1.gif" alt="" width="80px" height="80px" align="middle" /></a>
+				 <p><a href="#" title="" >日语</a></p>
+					</li>			  
+				   <li>
+				   <a href="#" title=""><img src="images/tu1.gif" alt="" width="80px" height="80px" align="middle" /></a>
+                  <p><a href="#" title="" >法语</a></p>
+					</li>
+					<li>
+				   <a href="#" title=""><img src="images/tu1.gif" alt="" width="80px" height="80px" align="middle" /></a>
+                 <p><a href="#" title="" >德语</a></p>
+                                   </li>
+			  
+				   <li>
+				   <a href="#" title=""><img src="images/tu1.gif" alt="" width="80px" height="80px" align="middle" /></a>
+                    <p><a href="#" title="" >意大利语</a></p>
+					</li>
+					<li>
+				   <a href="#" title=""><img src="images/tu1.gif" alt="" width="80px" height="80px" align="middle" /></a>
+                     <p><a href="#" title="" >匈牙利语</a></p>
+					</li>
+                                   <li>
+				   <a href="#" title=""><img src="images/tu1.gif" alt="" width="80px" height="80px" align="middle" /></a>
+                     <p><a href="#" title="" >西班牙语</a></p>
+				
+					</li>			  
+				   <li>
+				   <a href="#" title=""><img src="images/tu1.gif" alt="" width="80px" height="80px" align="middle" /></a>
+                   <p><a href="#" title="" >希腊语</a></p>
+					</li>
+					<li>
+				   <a href="#" title=""><img src="images/tu1.gif" alt="" width="80px" height="80px" align="middle" /></a>
+                        <p><a href="#" title="" >俄语</a></p>
+                                   </li>
+			  
+				   <li>
+				   <a href="#" title=""><img src="images/tu1.gif" alt="" width="80px" height="80px" align="middle" /></a>
+                    <p><a href="#" title="" >土耳其语</a></p>
+					</li>
+					<li>
+				   <a href="#" title=""><img src="images/tu1.gif" alt="" width="80px" height="80px" align="middle" /></a>
+                     <p><a href="#" title="" >芬兰语</a></p>
+					</li>
+			  
+       </ul>
+	   -->
+  		       <div class="musmiddletopindex">
+			       <span><img src="images/im_mus.gif" align="absmiddle" alt="" style="margin-top:-3px; margin-left:4px; margin-right:5px"/><strong>国际标准舞音乐</strong></span>
+			   </div>
+               <div class="hot_music">		  
+			   <div class="musmiddlebox">
+				 <table cellspacing="0" cellpadding="0">
+					 <tr>
+						   <td width="38" class="xuanze"><img src="images/musicb.gif" alt="试听" width="22" height="22" align="absmiddle" /></td>
+						   <td width="20" align="center">#</td>
+						   <td width="329" class="paddingleftcss">歌曲信息</td>
+						   <td width="102">舞曲类型</td>
+						   <td colspan="2">&nbsp;</td>
+					 </tr> 
+					 <tr>
+						   <td class="xuanze"><input type="checkbox" name="choose" /></td>
+						   <td  align="center" width="20"><a href="#" title="中国"><img src="images/china.gif" alt="中国" width="20" height="14" align="absmiddle" /></a></td>
+						   <td class="paddingleftcss"><a href="#" title="Lady GaGa" >Lady GaGa</a> - <a href="#" title="Beautiful, Dirty, Rich">Beautiful, Dirty, Rich</a></td>  
+						   <td><a href="#" title="">快步舞曲</a></td>
+						   <td width="32"><img src="images/likeimg.gif" align="" alt="" /></td>
+						   <td width="65">
+						   <div style="position:relative"><a href="#" title=""><img src="images/likeimgtwo.gif" align="absmiddle" alt="" /></a>
+								<div style="position:absolute; border:1px solid #ddd; width:85px; background:#F4F4F4; z-index:888; left:26px;top:15px; padding:3px" >
+									 <p style=" border-bottom:1px solid #ddd"><a href="#" title="添加收藏">添加收藏</a></p>
+									 <p style=" border-bottom:1px solid #ddd"><a href="#" title="分享">分享</a></p>
+									 <p style=" border-bottom:1px solid #ddd; border:none"><a href="#" title="添加到播放列表">添加到播放列表</a></p>
+								</div>
+						   </div>
+					     </td>
+				   </tr> 
+				   <tr>
+					      <td class="xuanze"><input type="checkbox" name="choose" /></td>
+					      <td  align="center" width="20"><a href="#" title="中国"><img src="images/china.gif" alt="中国" width="20" height="14" align="absmiddle" /></a></td>
+					      <td class="paddingleftcss"><a href="#" title="Lady GaGa" >Lady GaGa</a> - <a href="#" title="Beautiful, Dirty, Rich">Beautiful, Dirty, Rich</a></td>
+					      <td><a href="#" title="">快步舞曲</a></td>
+					      <td width="32"><img src="images/likeimg.gif" align="" alt="" /></td>
+					      <td width="65">
+						   <div style="position:relative"><a href="#" title=""><img src="images/likeimgtwo.gif" align="absmiddle" alt="" /></a>
+						   </div>
+					      </td>
+				   </tr> 
+				   <tr>
+					      <td class="xuanze"><input type="checkbox" name="choose" /></td>
+					      <td  align="center" width="20"><a href="#" title="中国"><img src="images/china.gif" alt="中国" width="20" height="14" align="absmiddle" /></a></td>
+					      <td class="paddingleftcss"><a href="#" title="Lady GaGa" >Lady GaGa</a> - <a href="#" title="Beautiful, Dirty, Rich">Beautiful, Dirty, Rich</a></td>
+					      <td><a href="#" title="">快步舞曲</a></td>
+					      <td width="32"><img src="images/likeimg.gif" align="" alt="" /></td>
+					      <td width="65">
+						   <div style="position:relative"><a href="#" title=""><img src="images/likeimgtwo.gif" align="absmiddle" alt="" /></a>
+						   </div>
+					      </td>
+				   </tr>  
+				   <tr>
+					      <td class="xuanze"><input type="checkbox" name="choose" /></td>
+					      <td  align="center" width="20"><a href="#" title="中国"><img src="images/china.gif" alt="中国" width="20" height="14" align="absmiddle" /></a></td>
+					      <td class="paddingleftcss"><a href="#" title="Lady GaGa" >Lady GaGa</a> - <a href="#" title="Beautiful, Dirty, Rich">Beautiful, Dirty, Rich</a></td>
+					      <td><a href="#" title="">快步舞曲</a></td>
+					      <td width="32"><img src="images/likeimg.gif" align="" alt="" /></td>
+					      <td width="65">
+						   <div style="position:relative"><a href="#" title=""><img src="images/likeimgtwo.gif" align="absmiddle" alt="" /></a>
+						   </div>
+					      </td>
+				   </tr> 
+				   <tr>
+					      <td class="xuanze"><input type="checkbox" name="choose" /></td>
+					      <td  align="center" width="20"><a href="#" title="中国"><img src="images/china.gif" alt="中国" width="20" height="14" align="absmiddle" /></a></td>
+					      <td class="paddingleftcss"><a href="#" title="Lady GaGa" >Lady GaGa</a> - <a href="#" title="Beautiful, Dirty, Rich">Beautiful, Dirty, Rich</a></td>
+					      <td><a href="#" title="">快步舞曲</a></td>
+					      <td width="32"><img src="images/likeimg.gif" align="" alt="" /></td>
+					      <td width="65">
+						   <div style="position:relative"><a href="#" title=""><img src="images/likeimgtwo.gif" align="absmiddle" alt="" /></a>
+						   </div>
+					      </td>
+				   </tr> 
+				   <tr>
+					      <td class="xuanze"><input type="checkbox" name="choose" /></td>
+					      <td  align="center" width="20"><a href="#" title="中国"><img src="images/china.gif" alt="中国" width="20" height="14" align="absmiddle" /></a></td>
+					      <td class="paddingleftcss"><a href="#" title="Lady GaGa" >Lady GaGa</a> - <a href="#" title="Beautiful, Dirty, Rich">Beautiful, Dirty, Rich</a></td>
+					      <td><a href="#" title="">快步舞曲</a></td>
+					      <td width="32"><img src="images/likeimg.gif" align="" alt="" /></td>
+					      <td width="65">
+						   <div style="position:relative"><a href="#" title=""><img src="images/likeimgtwo.gif" align="absmiddle" alt="" /></a>
+						   </div>
+					      </td>
+				   </tr> 
+				   <tr>
+					      <td class="xuanze"><input type="checkbox" name="choose" /></td>
+					      <td  align="center" width="20"><a href="#" title="中国"><img src="images/china.gif" alt="中国" width="20" height="14" align="absmiddle" /></a></td>
+					      <td class="paddingleftcss"><a href="#" title="Lady GaGa" >Lady GaGa</a> - <a href="#" title="Beautiful, Dirty, Rich">Beautiful, Dirty, Rich</a></td>
+					      <td><a href="#" title="">快步舞曲</a></td>
+					      <td width="32"><img src="images/likeimg.gif" align="" alt="" /></td>
+					      <td width="65">
+						   <div style="position:relative"><a href="#" title=""><img src="images/likeimgtwo.gif" align="absmiddle" alt="" /></a>
+						   </div>
+					      </td>
+				   </tr> 
+				   <tr>
+					      <td class="xuanze"><input type="checkbox" name="choose" /></td>
+					      <td  align="center" width="20"><a href="#" title="中国"><img src="images/china.gif" alt="中国" width="20" height="14" align="absmiddle" /></a></td>
+					      <td class="paddingleftcss"><a href="#" title="Lady GaGa" >Lady GaGa</a> - <a href="#" title="Beautiful, Dirty, Rich">Beautiful, Dirty, Rich</a></td>
+					      <td><a href="#" title="">快步舞曲</a></td>
+					      <td width="32"><img src="images/likeimg.gif" align="" alt="" /></td>
+					      <td width="65">
+						   <div style="position:relative"><a href="#" title=""><img src="images/likeimgtwo.gif" align="absmiddle" alt="" /></a>
+						   </div>
+					      </td>
+				   </tr>  
+				   <tr>
+					      <td class="xuanze"><input type="checkbox" name="choose" /></td>
+					      <td  align="center" width="20"><a href="#" title="中国"><img src="images/china.gif" alt="中国" width="20" height="14" align="absmiddle" /></a></td>
+					      <td class="paddingleftcss"><a href="#" title="Lady GaGa" >Lady GaGa</a> - <a href="#" title="Beautiful, Dirty, Rich">Beautiful, Dirty, Rich</a></td>
+					      <td><a href="#" title="">快步舞曲</a></td>
+					      <td width="32"><img src="images/likeimg.gif" align="" alt="" /></td>
+					      <td width="65">
+						   <div style="position:relative"><a href="#" title=""><img src="images/likeimgtwo.gif" align="absmiddle" alt="" /></a>
+						   </div>
+					      </td>
+				   </tr>  
+				   <tr>
+					      <td class="xuanze"><input type="checkbox" name="choose" /></td>
+					      <td  align="center" width="20"><a href="#" title="中国"><img src="images/china.gif" alt="中国" width="20" height="14" align="absmiddle" /></a></td>
+					      <td class="paddingleftcss"><a href="#" title="Lady GaGa" >Lady GaGa</a> - <a href="#" title="Beautiful, Dirty, Rich">Beautiful, Dirty, Rich</a></td>
+					      <td><a href="#" title="">快步舞曲</a></td>
+					      <td width="32"><img src="images/likeimg.gif" align="" alt="" /></td>
+					      <td width="65">
+						   <div style="position:relative"><a href="#" title=""><img src="images/likeimgtwo.gif" align="absmiddle" alt="" /></a>
+						   </div>
+					      </td>
+				   </tr> 
+				   <tr>
+					      <td class="xuanze"><input type="checkbox" name="choose" /></td>
+					      <td  align="center" width="20"><a href="#" title="中国"><img src="images/china.gif" alt="中国" width="20" height="14" align="absmiddle" /></a></td>
+					      <td class="paddingleftcss"><a href="#" title="Lady GaGa" >Lady GaGa</a> - <a href="#" title="Beautiful, Dirty, Rich">Beautiful, Dirty, Rich</a></td>
+					      <td><a href="#" title="">快步舞曲</a></td>
+					      <td width="32"><img src="images/likeimg.gif" align="" alt="" /></td>
+					      <td width="65">
+						   <div style="position:relative"><a href="#" title=""><img src="images/likeimgtwo.gif" align="absmiddle" alt="" /></a>
+						   </div>
+					      </td>
+				   </tr> 
+				   <tr>
+					      <td class="xuanze"><input type="checkbox" name="choose" /></td>
+					      <td  align="center" width="20"><a href="#" title="中国"><img src="images/china.gif" alt="中国" width="20" height="14" align="absmiddle" /></a></td>
+					      <td class="paddingleftcss"><a href="#" title="Lady GaGa" >Lady GaGa</a> - <a href="#" title="Beautiful, Dirty, Rich">Beautiful, Dirty, Rich</a></td>
+					      <td><a href="#" title="">快步舞曲</a></td>
+					      <td width="32"><img src="images/likeimg.gif" align="" alt="" /></td>
+					      <td width="65">
+						   <div style="position:relative"><a href="#" title=""><img src="images/likeimgtwo.gif" align="absmiddle" alt="" /></a>
+						   </div>
+					      </td>
+				   </tr> 
+				   <tr>
+					      <td class="xuanze"><input type="checkbox" name="choose" /></td>
+					      <td  align="center" width="20"><a href="#" title="中国"><img src="images/china.gif" alt="中国" width="20" height="14" align="absmiddle" /></a></td>
+					      <td class="paddingleftcss"><a href="#" title="Lady GaGa" >Lady GaGa</a> - <a href="#" title="Beautiful, Dirty, Rich">Beautiful, Dirty, Rich</a></td>
+					      <td><a href="#" title="">快步舞曲</a></td>
+					      <td width="32"><img src="images/likeimg.gif" align="" alt="" /></td>
+					      <td width="65">
+						   <div style="position:relative"><a href="#" title=""><img src="images/likeimgtwo.gif" align="absmiddle" alt="" /></a>
+						   </div>
+					      </td>
+				</table>
+			   </div>
+			   <div class="musmiddlebb">
+			   <span><input type="checkbox" /><strong>全选</strong></span>
+			   <a href="#" title="播放" class="m_one">播放</a>
+			   <a href="#" title="添加" class="m_two">添加</a>
+			   <a href="#" title="随便听听" class="m_three">随便听听</a>
+			   </div>			   
+		  </div>  
+  </div>
+    
+
+<!--left_end-->
+
+<!--right_start-->
+
+<div class="right">
+
+  <ul class="rt1">
+     <li class="r1"><strong>听歌学语言</strong></li>
+     
+     <li class="r2">
+     <table cellpadding="0" cellspacing="10" border="0">
+     <tr>
+       <td style="width:65px" align="left">国家</td>
+       <td><input type="button" class="inputnb" value="选择/修改"/></td>
+     </tr>
+     <tr>
+     <td align="left">语言</td>
+     <td><input type="button" class="inputnb" value="选择/修改"/></td>
+     </tr>
+     <tr>
+       <td align="left">流派</td>
+       <td><input type="button" class="inputnb" value="选择/修改"/></td>
+     </tr>
+	 <tr>
+       <td align="left">艺人类型</td>
+       <td><input type="button" class="inputnb" value="选择/修改"/></td>
+     </tr>
+	 <tr>
+       <td style="width:65px" align="left">关键词</td>
+       <td><input type="text" class="inputserch" style="width:178px" /></td>
+     </tr>
+     </table>
+     </li>
+     
+     
+   </ul>
+  
+  <div class="rightboxtwo">
+  
+<div class="musmiddleboxrighttop_i"><span><img src="images/orangelinetwo.gif" align="absmiddle" alt="" />语言交换伙伴:</span><a href="#"  title="更多" class="black">更多&gt;&gt;</a></div>
+
+     <ul class="rightulthree">
+     <li>
+     <a href="#" title=""><img src="images/tu1.gif" alt="" width="73px" height="73px" align="middle" /></a>
+     <a href="#" title="" class="black">原来</a><br />
+     <a href="#" title="" class="black">来自上海</a><br />
+     <a href="#" title="" class="black">想学德语</a>
+     </li>
+     
+      <li>
+     <a href="#" title=""><img src="images/tu1.gif" alt="" width="73px" height="73px" align="middle" /></a>
+     <a href="#" title="" class="black">原来</a><br />
+     <a href="#" title="" class="black">来自上海</a><br />
+     <a href="#" title="" class="black">想学德语</a>
+     </li>
+     
+      <li>
+     <a href="#" title=""><img src="images/tu1.gif" alt="" width="73px" height="73px" align="middle" /></a>
+     <a href="#" title="" class="black">原来</a><br />
+     <a href="#" title="" class="black">来自上海</a><br />
+     <a href="#" title="" class="black">想学德语</a>
+     </li>
+     
+      <li>
+     <a href="#" title=""><img src="images/tu1.gif" alt="" width="73px" height="73px" align="middle" /></a>
+     <a href="#" title="" class="black">原来</a><br />
+     <a href="#" title="" class="black">来自上海</a><br />
+     <a href="#" title="" class="black">想学德语</a>
+     </li>
+     
+     <li>
+     <a href="#" title=""><img src="images/tu1.gif" alt="" width="73px" height="73px" align="middle" /></a>
+     <a href="#" title="" class="black">原来</a><br />
+     <a href="#" title="" class="black">来自上海</a><br />
+     <a href="#" title="" class="black">想学德语</a>
+     </li>
+     
+      <li>
+     <a href="#" title=""><img src="images/tu1.gif" alt="" width="73px" height="73px" align="middle" /></a>
+     <a href="#" title="" class="black">原来</a><br />
+     <a href="#" title="" class="black">来自上海</a><br />
+     <a href="#" title="" class="black">想学德语</a>
+     </li>
+      
+      
+     </ul>
+   
+  
+   </div>
+<div class="rightboxtwo">
+  
+<div class="musmiddleboxrighttop_i"><span><img src="images/orangelinetwo.gif" align="absmiddle" alt="" />大家正在听:</span><a href="#"  title="更多" class="black">更多&gt;&gt;</a></div> 
+
+     <ul class="rightulfour">
+     <li>
+     <a href="#" title=""><img src="images/tu1.gif" alt="" width="73px" height="73px" align="middle" /></a>
+     <a href="#" title="" class="black">土耳其语</a><br />
+     </li>
+     
+      <li>
+     <a href="#" title=""><img src="images/tu1.gif" alt="" width="73px" height="73px" align="middle" /></a>
+      <a href="#" title="" class="black">日语</a><br />
+      </li>
+     
+      <li>
+     <a href="#" title=""><img src="images/tu1.gif" alt="" width="73px" height="73px" align="middle" /></a>
+      <a href="#" title="" class="black">法语</a><br />
+      </li>
+     
+      <li>
+     <a href="#" title=""><img src="images/tu1.gif" alt="" width="73px" height="73px" align="middle" /></a>
+      <a href="#" title="" class="black">德语</a><br />
+     </li>
+     
+     <li>
+     <a href="#" title=""><img src="images/tu1.gif" alt="" width="73px" height="73px" align="middle" /></a>
+      <a href="#" title="" class="black">意大利语</a><br />
+     </li>
+
+   <li>
+     <a href="#" title=""><img src="images/tu1.gif" alt="" width="73px" height="73px" align="middle" /></a>
+      <a href="#" title="" class="black">匈牙利语</a><br />
+      </li>
+      </ul>
+   
+</div>   
+
+    
+     <div class="rightboxtwo">
+
+<div class="musmiddleboxrighttop_i"><span><img src="images/orangelinetwo.gif" align="absmiddle" alt="" />大家想要听:</span><a href="#"  title="更多" class="black">更多&gt;&gt;</a></div>     
+
+     <ul class="rightulfour">
+     <li>
+     <a href="#" title=""><img src="images/tu1.gif" alt="" width="73px" height="73px" align="middle" /></a>
+     <a href="#" title="" class="black">土耳其语</a><br />
+     </li>
+     
+      <li>
+     <a href="#" title=""><img src="images/tu1.gif" alt="" width="73px" height="73px" align="middle" /></a>
+      <a href="#" title="" class="black">日语</a><br />
+      </li>
+     
+      <li>
+     <a href="#" title=""><img src="images/tu1.gif" alt="" width="73px" height="73px" align="middle" /></a>
+      <a href="#" title="" class="black">法语</a><br />
+      </li>
+     
+      <li>
+     <a href="#" title=""><img src="images/tu1.gif" alt="" width="73px" height="73px" align="middle" /></a>
+      <a href="#" title="" class="black">德语</a><br />
+     </li>
+     
+     <li>
+     <a href="#" title=""><img src="images/tu1.gif" alt="" width="73px" height="73px" align="middle" /></a>
+      <a href="#" title="" class="black">意大利语</a><br />
+     </li>
+
+   <li>
+     <a href="#" title=""><img src="images/tu1.gif" alt="" width="73px" height="73px" align="middle" /></a>
+      <a href="#" title="" class="black">匈牙利语</a><br />
+      </li>
+      </ul>
+   
+
+   </div>
+     
+
+</div>
+<!--right_end-->
+
+</div>
+
+<!--document end-->
+
+
+<!--footer start-->
+<div style="clear:both;"></div>
+<ul class="footer">
+   <li>
+   <a href="about.html" title="关于我们">关于我们</a> | <a href="partners.html" title="合作网站">合作网站</a> | <a href="service.html" title="广告服务">广告服务</a>| <a href="link.html" title="友情链接">友情链接 </a>| <a href="" title="使用协议">使用协议</a> | <a href="copyright.html" title="版权声明">版权声明</a> | <a href="contact.html" title="联系我们">联系我们</a></li>
+  <li> © 2006 - 2009 Powered by umusic.cc</li>
+  <li><a href="http://jigsaw.w3.org/css-validator/check/referer"><img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" /></a>
+      <a href="http://jigsaw.w3.org/css-validator/check/referer"><img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!" /></a></li>
+</ul>
+
+<!--footer end-->
+
+</body>
+</html>

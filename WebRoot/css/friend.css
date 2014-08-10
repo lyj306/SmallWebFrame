@@ -1,0 +1,97 @@
+.mainbox{ margin:0px auto;width:912px; padding:15px;}
+a.bule:link {
+	color:#087ccf; text-decoration:none;
+}
+a.bule:visited {
+	color:#087ccf; text-decoration:none;
+}
+a.bule:hover {
+	color:#087ccf;text-decoration:underline;
+}
+
+a.liulan:link { float:left; background:url(../images/liulan_a.gif) no-repeat; width:99px; height:31px; text-align:center; color:#fff; font-weight:bold;text-decoration:none;line-height:31px; margin-right:20px; font-size:14px;
+}
+a.liulan:visited {
+float:left; background:url(../images/liulan_a.gif) no-repeat; width:99px; height:31px; text-align:center; color:#fff; font-weight:bold;line-height:31px;text-decoration:none; margin-right:20px; font-size:14px;
+}
+a.liulan:hover {
+float:left; background: url(../images/liulan_h.gif) no-repeat; width:99px; height:31px; text-align:center; color:#fff; font-weight:bold;line-height:31px;text-decoration:none; margin-right:20px; font-size:14px;
+}
+.toplist_box{ float:left;width:912px; height:45px; line-height:45px}
+.toplist_box span{ float:left; width:580px; padding-left:20px}
+.toplist_box code{ float:right; width:305px; font-size:12px;text-align:right; font-weight:bold}
+.albumtable{ float:left; width:876px; height:78px; padding:18px; background:#f1f1f1; color:#000;}
+.albumtable table{ float:left; font-size:12px}
+.albumtable table td.one{ margin-top:5px}
+.inputone_f{ float:left; height:20px;  _height:22px;  *height:22px; width:130px; margin-top:5px; font-size:12px}
+.inputtwo_f{float:left; height:17px; width:120px;border:1px solid #ccc;margin-top:5px; padding-top:3px}
+.inputthree_f{float:left; height:20px; _height:22px; *height:22px; width:100px; margin-top:5px;}
+.inputfour_f{ margin-right:3px;vertical-align:middle;}
+.albumtable table span{ float:left; height:31px; line-height:25px; font-size:12px; margin-top:8px}
+/*album_all css*/
+.album_alltop{ float:left; width:912px; margin-top:5px; margin-bottom:12px;_margin-bottom:0px;*margin-bottom:0px;}
+.personmate{ float:left; width:896px; height:27px; line-height:27px; overflow:hidden; background:#badaff; color:#38475c; padding-left:16px;}
+.personmate span{ float:left; width:515px;}
+.personmate span img{ margin-top:5px; margin-right:16px}
+.personmate code{ float:right; width:330px; font-size:12px; _padding-top:5px; text-align:right}
+.personmate code img{ margin-left:7px; margin-right:5px}
+
+.personmateleft{ float:left; width:610px; padding-left:16px; padding-top:18px; }
+.personmateleft li.photo{ float:left; width:160px; display:inline}
+.personmateleft li.photo img{ float:left; width:132px; height:132px; padding:6px; border:1px solid #eaeaea;}
+.personmateleft li.photo p{ float:left; width:132px; line-height:150%; padding-top:12px;}
+.personmateleft li.mata{ float:left; width:436px;display:inline; overflow:hidden;}
+.personmateleft li.mata span{ float:left; width:150px;  height:17px;_height:14px; padding-top:5px;_padding-top:8px;}
+.personmateleft li.mata select{ float:right;width:220px; height:22px;_margin-top:3px}
+.personmateleft li.mata p{ float:left; text-indent:25px; line-height:170%;width:436px; border-top:1px dashed #999999; padding-top:8px; margin-top:8px; overflow:hidden;}
+
+.personmateright{ float:right; width:285px; padding-top:18px; }
+.personmaterightlist{ float:left;width:285px; height:20px; line-height:20px; background:#fedc8d; margin-bottom:1px }
+.personmaterightlist span{ float:left;width:221px; color:#000000; border-right:1px solid #fff; padding-left:7px}
+.personmaterightlist code{ float:left; width:53px; font-size:12px; height:12px; padding-top:3px; padding-right:3px}
+.personmaterightlist code img{ float:right;}
+.personmaterightmate{ float:left;width:274px;background:#fff4ca; padding:3px 4px 3px 7px; line-height:140%}
+.personmaterightmate span{ color:#990000}
+.personmaterightmate p{width:220px;}
+
+.personmatelist{ float:left; width:896px; height:27px; line-height:27px; overflow:hidden; background:#badaff; color:#38475c; padding-left:16px;}
+.personmatelist span{ float:left; width:515px;}
+.personmatelist code{ float:right; width:345px; padding-right:5px;font-size:12px; height:9px; padding-top:6px;}
+.personmatelist code img{ float:right;}
+.personlist{ float:left; width:896px; padding:17px 25px 10px ;}
+.personlist li.photo{ float:left; width:148px; display:inline;}
+.personlist li.photo img{ float:left; width:105px; height:111px; padding:6px; border:1px solid #eaeaea; margin-bottom:8px;}
+.personlist li.photo p{ float:left; width:120px; line-height:140%}
+
+.personhistory{ float:left; width:896px; padding:17px 25px 10px ;}
+.personhistoryleft{ float:left; width:435px; line-height:200%}
+.personhistoryleft img{ float:left; width:93px; height:93px; padding:3px; border:1px solid #eaeaea; margin-bottom:14px; margin-right:12px;}
+.personhistoryleft strong{ font-size:14px}
+.personhistoryleft p{ float:left; width:160px;}
+.personhistoryright{ float:left; width:430px; line-height:200%;}
+.personhistoryright p{ float:left; width:430px; height:15px; padding-top:6px}
+.personhistoryright strong{margin-right:3px;}
+.personhistoryright img{ margin-right:2px;margin-top:-5px;_margin-top:-2px;*margin-top:-2px;}
+
+	
+/*CSS manu style pagination*/
+
+.manu {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; MARGIN: 3px; PADDING-TOP: 3px; TEXT-ALIGN: center;float:left;width:896px; margin-top:8px;
+}
+.manu A {
+	BORDER-RIGHT: #eee 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #eee 1px solid; PADDING-LEFT: 5px; PADDING-BOTTOM: 2px; MARGIN: 2px; BORDER-LEFT: #eee 1px solid; COLOR: #036cb4; PADDING-TOP: 2px; BORDER-BOTTOM: #eee 1px solid; TEXT-DECORATION: none
+}
+.manu A:hover {
+	BORDER-RIGHT: #999 1px solid; BORDER-TOP: #999 1px solid; BORDER-LEFT: #999 1px solid; COLOR: #666; BORDER-BOTTOM: #999 1px solid
+}
+.manu A:active {
+	BORDER-RIGHT: #999 1px solid; BORDER-TOP: #999 1px solid; BORDER-LEFT: #999 1px solid; COLOR: #666; BORDER-BOTTOM: #999 1px solid
+}
+
+.manu .current {
+	BORDER-RIGHT: #036cb4 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #036cb4 1px solid; PADDING-LEFT: 5px; FONT-WEIGHT: bold; PADDING-BOTTOM: 2px; MARGIN: 2px; BORDER-LEFT: #036cb4 1px solid; COLOR: #fff; PADDING-TOP: 2px; BORDER-BOTTOM: #036cb4 1px solid; BACKGROUND-COLOR: #036cb4
+}
+.manu .disabled {
+	BORDER-RIGHT: #eee 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #eee 1px solid; PADDING-LEFT: 5px; PADDING-BOTTOM: 2px; MARGIN: 2px; BORDER-LEFT: #eee 1px solid; COLOR: #ddd; PADDING-TOP: 2px; BORDER-BOTTOM: #eee 1px solid
+}
