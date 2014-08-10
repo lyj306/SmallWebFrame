@@ -66,7 +66,7 @@ public class XmlDbFieldConf {
 			.append(SqlFieldTypeUtil.javaFieldType2SqlFieldType(type, typeLength));
 		
 		if(defValue != null && !defValue.isEmpty()) {
-			buff.append("DEFAULT '").append(defValue).append("'");
+			buff.append(" DEFAULT '").append(defValue).append("'");
 		}
 		return buff.toString();
 	}

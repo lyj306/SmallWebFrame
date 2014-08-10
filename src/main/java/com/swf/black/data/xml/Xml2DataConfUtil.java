@@ -64,7 +64,11 @@ public class Xml2DataConfUtil {
 		xd.getDbConf().setTable(getSubElementValue(dbConfElement, "table"));
 		xd.getDbConf().setKey(getSubElementValue(dbConfElement, "key"));
 		
-		List<Element> fieldList = dbConfElement.elements("fields");
+		List<Element> fieldList = null;
+		Element fieldsNode = dbConfElement.element("fields");
+		if(fieldsNode != null) {
+			fieldList = fieldsNode.elements();
+		}
 		if(fieldList != null && !fieldList.isEmpty()) {
 			xd.getDbConf().initFiledSize(fieldList.size());
 			for (int i=0; i<fieldList.size(); i++) {
@@ -103,30 +107,7 @@ public class Xml2DataConfUtil {
 		return e.attributeValue(name);
 	}
 	
-	/*
-	<root>
-	<dbconf>
-		<table>wine</table>
-		<key>id</key>
-		<fields>
-			<id type="int" comments="ID"/>
-			<name type="String" comments="酒名字" />
-			<content type="String" comments="描述" />
-			<price type="float" default="1000" comments="价格"  />
-			<dis_price type="float" default="1000" comments="折扣价" />
-			<birthday type="int" default="0" comments="出厂日期"  />
-			<feel type="byte" default="1" scope="1,2,3,4" scopeSelect="1-甘甜,2-浓重,3-酸甜,4-顺滑" comments="口感" />
-			<flavor type="byte" default="1" scope="1,2,3,4" scopeSelect="1-酱香,2-浓香,3-清香,4-米香" comments="香型" />
-			<degree type="byte" default="50" comments="度数"  />
-			<uses type="byte" default="1" scope="1,2,3,4" scopeSelect="1-送礼,2-聚会,3-婚宴,4-商务" comments="用途"  />
-			<meat type="byte" default="1" scope="1,2,3,4" scopeSelect="1-湘菜,2-川菜,3-粤菜,4-鲁菜" comments="配餐" />
-		</fields>
-	</dbconf>
-</root>
-	*/
 	
-	public static void main(String[] args) {
-		read("F:\\workspace1.4\\SmallWebFrame\\src\\main\\resource\\data\\tabale\\");
-	}
+	
 	
 }

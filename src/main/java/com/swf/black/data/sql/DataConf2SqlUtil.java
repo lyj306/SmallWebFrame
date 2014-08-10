@@ -1,13 +1,19 @@
 package com.swf.black.data.sql;
 
+import java.io.File;
+import java.io.IOException;
+
+import org.apache.commons.io.FileUtils;
+
 import com.swf.black.data.temp.XmlDataConf;
 import com.swf.black.data.temp.XmlDbFieldConf;
 import com.swf.black.data.temp.XmlDbconf;
+import com.swf.conf.Common;
 
 public class DataConf2SqlUtil {
 
 	
-	public static String sqlFilePath = "D:/";
+	public static String sqlFilePath = "data\\tabale\\";
 	
 	public static void createSqlFile(XmlDataConf xdc) {
 		if(xdc == null || xdc.getDbConf() == null)
@@ -30,10 +36,15 @@ public class DataConf2SqlUtil {
 			}
 			buff.append("\n\tPRIMARY KEY (`").append(dbConf.getKey()).append("`)");
 		}
-		buff.append(") ENGINE=InnoDB DEFAULT CHARSET=utf8;");
+		buff.append("\n) ENGINE=InnoDB DEFAULT CHARSET=utf8;");
 		
-		String sql = buff.toString();
-		
+		String path = Common.getSrcMainResource()+sqlFilePath+dbConf.getTable()+".sql";
+		File file = new File(path);
+		try {
+			FileUtils.writeStringToFile(file, buff.toString());
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 	
 }

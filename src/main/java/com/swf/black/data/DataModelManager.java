@@ -34,7 +34,7 @@ public class DataModelManager {
 	
 	
 	public static void main(String[] args) {
-		createSqlFromXml("F:\\workspace1.4\\SmallWebFrame\\src\\main\\resource\\data\\tabale\\");
+		createSqlFromXml("F:\\workspace1.4\\SmallWebFrame\\src\\main\\resource\\data\\xmlConf\\");
 	}
 	
 	
